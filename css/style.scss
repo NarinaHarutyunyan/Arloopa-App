@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+$open:'Open Sans', sans-serif;
+$source:'Source Sans Pro', sans-serif;
+$monserrat:'Montserrat', sans-serif;
+$robotto:'Roboto', sans-serif;
+$chivo:'Chivo', sans-serif;
+
+button{
+    width: 265px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: #EB1A23;
+    border-radius: 5px;
+    border: none;
+    font-family: $robotto;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+   
+}
+
+.app_box1{
+    margin-bottom: 75px;
+    .app_box1_header{
+        display: flex;
+        justify-content: center;
+        color: #000247;
+        font-family: $robotto;
+
+    }
+    .app_box1_left{
+        text-align: left;
+        max-width: 490px;
+        min-height: 430px;
+        margin-right:50px;
+        margin-top: 115px;
+        flex-basis: 40%;
+        h2{
+            font-size:42px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 35px;
+            margin-bottom:40px;
+            line-height:30px;
+
+        }
+        .ios_android
+        .download{
+            display: flex;
+            .ios_android_svg{
+                width: 15px;
+                height: 15px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                    fill: #000247;
+                }
+            }
+            .ios{
+                margin-right:10px;
+            }
+        }
+        .download_here{
+            font-size: 15px;
+            font-weight: bold;
+            margin-top:5px;
+            margin-bottom: 25px;
+        }
+    }
+    .app_box1_right{
+        max-width: 622px;
+        min-height: 535px;
+        margin-top: 55px;
+        flex-basis: 40%;
+       img{
+           width: 100%;
+           height: 100%;
+       }
+
+    }
+    @media screen and (max-width:1700px) {
+        .app_box1_left{
+            h2{
+                font-size:35px;
+               
+            }
+            p{
+                font-size:18px;
+            }
+            .download_here{
+                font-size: 11px;
+            }
+        }
+        .app_box1_right{
+            max-width: 500px;
+            min-height: 450px;
+        }
+     }
+     @media screen and (max-width:1500px) {
+        .app_box1_left{
+            max-width:350px ;
+            min-height: 230px;
+            margin-top: 55px;
+            h2{
+                font-size:18px;
+               
+            }
+            p{
+                font-size:15px;
+                margin-top: 15px;
+                margin-bottom: 35px;
+               
+                
+            }
+        }
+
+        .app_box1_right{
+            max-width: 350px;
+            min-height: 280px;
+        }
+     
+     }
+     @media screen and (max-width:845px) {
+         .app_box1_header{
+            flex-wrap: wrap;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+         }
+         .app_box1_right{
+             flex-basis: 100%;
+             margin-top:35px;
+           
+         }
+         .app_box1_left{
+            flex-basis: 100%;
+            text-align: center;
+            max-width: unset;
+            margin-right: unset;
+            .ios_android{
+               
+                .download{
+                    justify-content: center;
+                  
+                }
+            }
+            button{
+                margin-bottom: 50px;
+            }
+           
+        }
+     }
+     @media screen and (max-width:400px) {
+    .app_box1_right{
+        max-width:250px;
+        min-height:200px;
+    }
+   
+ }
+}
+
+    .arloopa_app{
+       
+        text-align: center;
+       
+        .arloopa_app_header{
+            text-align: center;
+            margin-right:500px;
+            margin-left: 500px;
+            color: #000247;
+            font-family: $robotto;
+            padding-top: 75px;
+           
+            h3{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 25px;
+                font-weight: 400;
+                margin-top: 25px;
+                margin-bottom: 75px;
+            }
+        }
+        .arloopa_app_boxes {
+            margin-bottom:50px;
+            font-family: $robotto;
+
+            .arloopa_app_items {
+               
+                display: flex;
+                justify-content:center;
+                .markerless_ar{
+                    margin-right:40px;
+                    margin-left: 40px;
+                }
+                .app_item {
+                    flex-basis:30%;
+                    max-width:300px;
+                    min-height:400px;
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    box-shadow: 15px 15px 10px #EDEDF3;
+                    .app_items_text {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        color: #000247;
+                        text-align: center;
+                        
+                      .txt{
+                          background-color: white;
+                          padding:38px 8px 25px 8px;
+                      }
+                    
+                        .app_svg{
+                            width:90px;
+                            height:80px;
+                            margin-top: 50px;
+                            margin-bottom: 30px;
+                            svg{
+                                width: 100%;
+                                height:100%;
+                            }
+                        }
+                        h3 {
+                            font-size: 21px;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size:22px;
+                            margin-top: 28px;
+                            margin-right:15px;
+                            margin-left:15px;
+                            font-weight:400;
+                        }
+                      
+                    }
+                    .box2_txt{
+                        background-color: white;
+                    }
+                    @media screen and (max-width: 1500px) {
+                        max-width:205px;
+                        min-height:300px;
+                           .app_items_text{
+                            .app_svg{
+                                width:70px;
+                                height:60px;
+                                margin-top: 35px;
+                                margin-bottom:20px;
+                               
+                            }
+                            h3 {
+                                font-size:16px;
+                            }
+                            p{
+                                font-size:13px;
+                                margin-top:15px;
+                               
+                            }
+                          
+                           } 
+                    }
+                }
+            }
+           
+            @media screen and (max-width:760px) {
+                .arloopa_app_items{
+                    flex-wrap: wrap;
+                    margin-left: 30px;
+                    margin-right: 30px;
+                    .app_item{
+                        flex-basis: 100%;
+                    }
+                    
+
+                }
+             }
+            @media screen and (max-width:350px) {
+                .arloopa_app_items{
+                    .markerless_ar{
+                        margin-right:unset;
+                        margin-left:unset;
+                    }
+
+                }
+             }
+          
+        }
+        @media screen and (max-width:1700px) {
+            .arloopa_app_header{
+                h3{
+                    font-size:25px;
+                }
+                p{
+                    font-size: 20px;
+                    margin-bottom: 45px;
+                    
+                }
+            }
+            button{
+                width: 200px;
+                height: 40px;
+            }
+         }
+         @media screen and (max-width:1570px) {
+             button{
+                 width: 150px;
+                 height: 30px;
+                 font-size: 14px;
+             }
+            .arloopa_app_header{
+                margin-left:350px;
+                margin-right:350px;
+              
+                h3{
+                    font-size:18px;
+                }
+                p{
+                    font-size:16px;
+                    margin-bottom:25px;
+                    
+                }
+            }
+         }
+         @media screen and (max-width:1210px) {
+            .arloopa_app_header{
+                margin-left:250px;
+                margin-right:250px;
+              
+            }
+         }
+         @media screen and (max-width:1010px) {
+            .arloopa_app_header{
+                margin-left:100px;
+                margin-right:100px;
+                h3{
+                    font-size:18px;
+                }
+                p{
+                    font-size:16px;
+                    margin-bottom:25px;
+                    
+                }
+            }
+         }
+         @media screen and (max-width:610px) {
+             button{
+                 width: 120px;
+                 height: 30px;
+                 font-size: 12px;
+             }
+            .arloopa_app_header{
+                margin-left:50px;
+                margin-right:50px;
+                h3{
+                    font-size:16px;
+                }
+                p{
+                    font-size:14px;
+                  
+                    
+                }
+            }
+         }
+         @media screen and (max-width:300px) {
+            .arloopa_app_header{
+                margin-left:10px;
+                margin-right:10px;
+               
+            }
+         }
+    }
+    .app_box2{
+        background-color: #EDEDF3;
+        padding-bottom: 75px;
+    }
+    .app_box3{
+        background-color: #F6F6FA;
+        padding-bottom: 100px;
+
+    }
+
+
+
